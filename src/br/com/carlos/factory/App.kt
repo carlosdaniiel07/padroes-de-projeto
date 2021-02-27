@@ -1,21 +1,18 @@
 package br.com.carlos.factory
 
-import br.com.carlos.factory.after.Client
+import br.com.carlos.factory.before.Client
+import br.com.carlos.generic.Example
 
 class App {
     companion object {
         @JvmStatic fun main(args: Array<String>) {
-//            val client = Client()
-//
-//            println("### Ordering an iPhone X")
-//            val iphone = client.orderIPhone("X", "standard")
-//            println(iphone)
-//
-//            println("### Ordering an iPhone 11 HighEnd")
-//            val iphone2 = client.orderIPhone("11", "highEnd")
-//            println(iphone2)
+            val withoutFactory: Example = Client()
+            val fullFactory: Example = br.com.carlos.factory.after.Client()
+            val halfSimpleFactory: Example = br.com.carlos.factory.halfSimple.Client()
 
-            Client().runExample()
+            // withoutFactory.runExample()
+            // fullFactory.runExample()
+            halfSimpleFactory.runExample()
         }
     }
 }

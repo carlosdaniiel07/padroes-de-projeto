@@ -3,9 +3,10 @@ package br.com.carlos.factory.after
 import br.com.carlos.factory.after.factory.IPhone11ProFactory
 import br.com.carlos.factory.after.factory.IPhoneFactory
 import br.com.carlos.factory.after.factory.IPhoneXFactory
+import br.com.carlos.generic.Example
 
-class Client {
-    fun runExample(): Unit {
+class Client : Example {
+    override fun runExample(): Unit {
         val iphoneXFactory: IPhoneFactory = IPhoneXFactory()
         val iphone11ProFactory: IPhoneFactory = IPhone11ProFactory()
 
