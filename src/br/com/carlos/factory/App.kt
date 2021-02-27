@@ -9,10 +9,12 @@ class App {
             val withoutFactory: Example = Client()
             val fullFactory: Example = br.com.carlos.factory.after.Client()
             val halfSimpleFactory: Example = br.com.carlos.factory.halfSimple.Client()
+            val simpleFactory: Example = br.com.carlos.factory.simple.Client()
 
             // withoutFactory.runExample()
             // fullFactory.runExample()
-            halfSimpleFactory.runExample()
+            // halfSimpleFactory.runExample()
+            simpleFactory.runExample()
         }
     }
 }
