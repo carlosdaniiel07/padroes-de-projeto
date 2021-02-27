@@ -1,8 +1,8 @@
 package br.com.carlos.factory.halfSimple
 
-import br.com.carlos.factory.halfSimple.models.factory.IPhone11Factory
-import br.com.carlos.factory.halfSimple.models.factory.IPhoneFactory
-import br.com.carlos.factory.halfSimple.models.factory.IPhoneXFactory
+import br.com.carlos.factory.halfSimple.factory.IPhone11Factory
+import br.com.carlos.factory.halfSimple.factory.IPhoneFactory
+import br.com.carlos.factory.halfSimple.factory.IPhoneXFactory
 import br.com.carlos.generic.Example
 
 class Client : Example {

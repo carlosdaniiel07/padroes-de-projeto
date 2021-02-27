@@ -1,4 +1,4 @@
-package br.com.carlos.factory.halfSimple.models.factory
+package br.com.carlos.factory.halfSimple.factory
 
 import br.com.carlos.factory.halfSimple.models.IPhone
 
